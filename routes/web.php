@@ -1,5 +1,6 @@
 <?php
 
+use App\Genders;
 use Illuminate\Support\Facades\Route;
 
 /*
