@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\DotaModels;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -12,6 +12,5 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Genders extends Model
 {
-
+    public $timestamps = false;
 }
-

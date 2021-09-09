@@ -1,6 +1,6 @@
 <?php
 
-use App\Genders;
+use App\DotaModels\Genders;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get("/", function () {
+    return view("welcome");
+});
+
+Route::get("/testinsertion", function () {
+    $femaleGender = new Genders();
+    $femaleGender->gender = "female";
+    $femaleGender->save();
+    return "a";
 });

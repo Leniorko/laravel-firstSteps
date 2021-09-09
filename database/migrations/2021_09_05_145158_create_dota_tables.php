@@ -16,7 +16,7 @@ class CreateDotaTables extends Migration
     {
         Schema::create("genders", function (Blueprint $table) {
             $table->id();
-            $table->string("gender");
+            $table->string("gender")->unique("UK_gender");
         });
 
         Schema::create("dota_users_personal_information", function (
