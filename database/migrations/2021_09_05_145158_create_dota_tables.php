@@ -86,7 +86,7 @@ class CreateDotaTables extends Migration
 
         // This schema probably should be controlled by laravel auth service.
         // TODO: Read about auth and, probably, change this table
-        Schema::create("users", function (Blueprint $table) {
+        Schema::create("dota_users", function (Blueprint $table) {
             $table->id();
             $table->string("email", 255);
             $table->string("phone", 255);
